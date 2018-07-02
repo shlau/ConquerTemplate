@@ -1,9 +1,15 @@
 body {
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+
 }
 
 nav {
+    grid-column: 1/2;
+    grid-row:1;
     position: fixed;
     background: #3f4c60;
     padding: 5px;
@@ -24,4 +30,47 @@ nav li {
     border: 1px solid white;
     padding: 1rem;
     margin-right: 1rem;
+}
+
+#text-image {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    height: auto;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;  
+}
+#text-image > h4 {
+    color:white;
+    font-size: 5em;
+}
+.col-3 {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 5;
+}
+
+.container {
+    padding: 10px;
+    text-align: left;
+}
+
+.text-wrapper {
+    padding: 10px 20px;
+    margin-top: 0;
+    background: #eff0f2;
+}
+
+.text-wrapper > p {
+    max-width: 300px;
+}
+
+.container > img{
+    max-width: 100%;
 }
