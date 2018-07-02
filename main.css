@@ -6,17 +6,18 @@ body {
     grid-template-columns: repeat(2,1fr);
 
 }
-
+/* navbar */
 nav {
     grid-column: 1/2;
     grid-row:1;
     position: fixed;
-    background: #3f4c60;
+    background: #313944;
     padding: 5px;
     width: 100%;
 }
 
 nav ul {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,13 +26,15 @@ nav ul {
 }
 
 nav li {
-    font-size:2vw;
+
+    font-size:1vw;
     color: white;
     border: 1px solid white;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin-right: 1rem;
 }
 
+/* banner */
 #text-image {
     grid-column: 1/4;
     grid-row: 2/4;
@@ -47,30 +50,95 @@ nav li {
     color:white;
     font-size: 5em;
 }
+
+/* three columns */
 .col-3 {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     grid-column: 1/4;
     grid-row: 5;
+    margin-top: 3rem;
 }
 
 .container {
     padding: 10px;
-    text-align: left;
 }
 
 .text-wrapper {
-    padding: 10px 20px;
-    margin-top: 0;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
     background: #eff0f2;
 }
 
-.text-wrapper > p {
+.col-3  p {
+    margin-top: 0;
     max-width: 300px;
 }
 
-.container > img{
+.text-wrapper h3 {
+    font-size: 1.3rem;
+}
+.container img{
     max-width: 100%;
+    height: auto;
+}
+
+.container button {
+    align-self: center;
+    font-size: 1.2rem;
+    color: white;
+    border:none;
+    border-radius: 0.3em;
+    background-color: blue;
+    padding: 10px 30px;;
+    margin-bottom: 20px;
+}
+
+#green h3{
+    color: #378d5e;
+}
+
+#green button {
+    background-color: #378d5e;
+}
+
+#blue h3{
+    color: #3188bb;
+}
+
+#blue button {
+    margin-top: 1.2rem;
+    background-color: #3188bb;
+}
+
+#red h3{
+    color: #2a2e30;
+}
+
+#red button {
+    background-color: #742424;
+}
+
+/* 2-col */
+.col-2 {
+    grid-column: 1/4;
+    grid-row: 6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.col-2  p {
+    margin-top: 0;
+    max-width: 500px;
+}
+
+.col-2 h3 {
+    text-align: center;
 }
