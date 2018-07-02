@@ -1,2 +1,2 @@
 # ConquerTemplate
-An attempt to create a single responsive page layout
+An attempt to mimic the conquer template's responsive page layout using only flexbox and grid.
